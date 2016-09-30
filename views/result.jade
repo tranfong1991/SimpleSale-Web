@@ -1,0 +1,34 @@
+extends layout
+
+block header
+	script.
+		var venmo_username = "#{venmo_username}"
+		var item_description = "#{item_description}"
+		var item_price = "#{item_price}"
+		var audience = "#{audience}"
+
+	link(href="stylesheets/bootstrap.min.css", rel="stylesheet")
+	link(href="stylesheets/font-awesome/css/font-awesome.min.css", rel="stylesheet", type="text/css")
+	link(href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic", rel="stylesheet", type="text/css")
+	link(href="stylesheets/stylish-portfolio.css", rel="stylesheet")
+
+block content
+	.col-xs-12#content
+		.row
+			h1#app-title: i: b Simple Sale
+		.row
+			h4: #[span: b Note:] #{item_description}
+			h4 #[span: b Price:] $#{item_price}
+		.row
+			h2: b Scan to Pay
+			img#qr-code
+		.row
+			h2: b Or
+			h2: a#url(target="_blank")
+		.row
+			button.btn.btn-default.btn-lg.no-print#back Back
+			button.btn.btn-primary.btn-lg.no-print#print Print
+
+	script(src="javascripts/jquery.js")
+	script(src="javascripts/bootstrap.min.js")
+	script(src="javascripts/result.js")
