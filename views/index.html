@@ -101,10 +101,16 @@
                     <div class="col-lg-10 col-lg-offset-1 text-center">
                         <h4><strong>Simple Sale</strong>
                         </h4>
-                        <p>Created by Andy Tran</p>
-                        <ul class="list-unstyled">
-                            <a href="http://www.tranandy.com">TranAndy.com</a>
-                        </ul>
+                        <p>
+                            Created by <a href="http://www.tranandy.com">Andy Tran</a>
+                        </p>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_donations" />
+                            <input type="hidden" name="business" value="tran_fong1991@yahoo.com" />
+                            <input type="hidden" name="currency_code" value="USD" />
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                        </form>
                         <br>
                         <ul class="list-inline">
                             <li>
@@ -112,9 +118,6 @@
                             </li>
                             <li>
                                 <a target="_blank" href="http://www.linkedin.com/in/andyntran" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin fa-2x"></i></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="http://www.facebook.com/AndyTran1991" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook fa-2x"></i></a>
                             </li>
                             <li>
                                 <a target="_blank" href="http://www.challengepost.com/tran_fong1991" class="btn-social btn-outline"><i class="fa fa-fw fa-code fa-2x"></i></a>

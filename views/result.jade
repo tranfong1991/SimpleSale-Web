@@ -18,7 +18,7 @@ block content
 			h1#app-title: i: b Simple Sale
 		.row
 			h4: #[span: b Note:] #{item_description}
-			h4 #[span: b Price:] $#{item_price}
+			h4: #[span: b Price:] $#{item_price}
 		.row
 			h2: b Scan to Pay
 			img#qr-code
@@ -28,6 +28,10 @@ block content
 		.row
 			button.btn.btn-default.btn-lg.no-print#back Back
 			button.btn.btn-primary.btn-lg.no-print#print Print
+		.row
+			br
+			.no-print
+				include donate_with_card_logos.html
 
 	script(src="javascripts/jquery.js")
 	script(src="javascripts/bootstrap.min.js")
